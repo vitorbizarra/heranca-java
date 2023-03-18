@@ -8,7 +8,7 @@ package Heranca;
  *
  * @author aluno
  */
-public class PessoaJuridica extends Cliente {
+public class ClienteJuridico extends Cliente {
 
     private String cnpj;
 

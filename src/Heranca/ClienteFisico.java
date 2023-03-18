@@ -8,7 +8,7 @@ package Heranca;
  *
  * @author aluno
  */
-public class PessoaFisica extends Cliente {
+public class ClienteFisico extends Cliente {
 
     private String cpf;
 

@@ -11,19 +11,11 @@ import java.util.ArrayList;
  * @author aluno
  */
 public class Cliente extends Pessoa {
-
-    private ArrayList<Endereco> enderecos;
-
+    
+    private ArrayList<Endereco> enderecos = new ArrayList();
+    
     private String email;
-
-    public void Cliente() {
-        try {
-            this.setEndereco((new ArrayList()));
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-    }
-
+    
     /**
      * @return the enderecos
      */
@@ -32,7 +24,7 @@ public class Cliente extends Pessoa {
     }
 
     /**
-     * @param endereco the endereco to set
+     * @param enderecos the endereco to set
      * @throws java.lang.Exception
      */
     public void setEndereco(ArrayList<Endereco> enderecos) throws Exception {
@@ -47,6 +39,13 @@ public class Cliente extends Pessoa {
      */
     public void addEndereco(Endereco endereco) {
         this.enderecos.add(endereco);
+    }
+
+    /**
+     * @param key the index of the endereco to remove from enderecos
+     */
+    public void addEndereco(int key) {
+        this.enderecos.remove(key);
     }
 
     /**

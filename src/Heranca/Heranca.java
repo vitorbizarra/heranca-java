@@ -14,8 +14,6 @@ public class Heranca {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Cliente cliente_fisico = new Cliente();
-        
-        
+        ClienteFisico cliente_fisico = new ClienteFisico();
     }
 }
